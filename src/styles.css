@@ -1,0 +1,82 @@
+/* You can add global styles to this file, and also import other style files */
+/*====  RESET ============================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+/*====  VARIABLES ============================ */
+:root {
+  --header-height: 4.5rem;
+  /* colors */
+  --hue: 87;
+  /* HSL color mode */
+  --base-color: hsl(var(--hue) 36% 57%);
+  --base-color-second: hsl(var(--hue) 65% 88%);
+  --base-color-alt: hsl(var(--hue) 57% 53%);
+  --title-color: hsl(var(--hue) 41% 10%);
+  --text-color: hsl(0 0% 46%);
+  --text-color-light: hsl(0 0% 98%);
+  --body-color: #1c5d87;
+}
+body {
+  background-color: var(--body-color);
+}
+h1 {
+  font: 700 1.875rem "Poppins", sans-serif;
+  color: white;
+  -webkit-font-smoothing: auto;
+}
+
+section {
+  padding: 2.1rem ​ 0;
+
+  margin-right: 31rem;
+  margin-left: 31rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+li {
+  color: white !important;
+  text-decoration: none;
+  background-color: var(--body-color) !important;
+  font-weight: 700;
+
+  border-radius: 6rem !important;
+}
+#home h1 {
+  font-size: 5rem;
+  color: cornflowerblue;
+}
+#home {
+  margin-top: 2rem;
+}
+#sorteados button {
+  display: inline-flex;
+  align-items: center;
+  padding: 0 2rem;
+  font: 500 1rem "DM Sans", sans-serif;
+  height: 3rem;
+  border-radius: 5rem;
+  width: 35%;
+  background-color: #3b2c91;
+  transition: background 0.3s;
+  font-weight: 600;
+  font-size: 1.5rem;
+  justify-content: center;
+}
+
+#sorteados button:hover {
+  background-color: hsl(249deg 53% 55%) !important;
+}
