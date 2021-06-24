@@ -62,7 +62,7 @@ li {
 #home {
   margin-top: 2rem;
 }
-#sorteados button {
+#lista button {
   display: inline-flex;
   align-items: center;
   padding: 0 2rem;
@@ -75,8 +75,9 @@ li {
   font-weight: 600;
   font-size: 1.5rem;
   justify-content: center;
+  margin-top: 2rem;
 }
 
-#sorteados button:hover {
+#lista button:hover {
   background-color: hsl(249deg 53% 55%) !important;
 }
