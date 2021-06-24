@@ -35,17 +35,27 @@
         <h1>Sorteio!!</h1>
       </div>
     </section>
-    <section class="section justify-content-center text-center " id="lista">
-      <div class="container ">
+    <section *ngIf="showListaNumeros" class="section justify-content-center text-center " id="lista">
+      <div class="container loading">
         <h1>Lista de números:</h1>
         <ul class="list-group" *ngFor="let item of numeros">
           <li class="list-group-item">{{item}}</li>
         </ul>
+        <button type="button" (click)="sortear()" class="btn btn-dark">Sortear</button>
+        <ngx-loading [show]="loading" [template]="loadingTemplate"></ngx-loading>
       </div>
     </section>
-    <section class="section justify-content-center text-center " id="sorteados">
+    <section class="section justify-content-center text-center " id="loading">
+      <div class="container loading">
+        <ngx-loading [show]="loading" [template]="loadingTemplate"></ngx-loading>
+      </div>
+    </section>
+    <section *ngIf="showSorteados" class="section justify-content-center text-center " id="sorteados">
       <div class="container ">
-        <button type="button" (click)="sortear()" class="btn btn-dark">Sortear</button>
+        <h1>Lista de sorteados:</h1>
+        <ul class="list-group" *ngFor="let item of numerosSorteados">
+          <li class="list-group-item">{{item.numero}}</li>
+        </ul>
 
       </div>
     </section>
