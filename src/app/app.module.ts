@@ -10,6 +10,7 @@ import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireStorageModule } from '@angular/fire/storage';
 import { environment } from '../environments/environment';
+import { TmNgOdometerModule } from 'tm-ng-odometer'; 
 
 import { ngxLoadingAnimationTypes, NgxLoadingModule } from 'ngx-loading';
 @NgModule({
@@ -18,6 +19,7 @@ import { ngxLoadingAnimationTypes, NgxLoadingModule } from 'ngx-loading';
   ],
   imports: [
     BrowserModule,
+
     BsDropdownModule.forRoot(),
     TooltipModule.forRoot(),
     ModalModule.forRoot(),
@@ -30,7 +32,8 @@ import { ngxLoadingAnimationTypes, NgxLoadingModule } from 'ngx-loading';
       primaryColour: '#ffffff',
       secondaryColour: '#ccc',
       backdropBorderRadius: '3px'
-    })
+    }),
+    TmNgOdometerModule 
   ],
   providers: [],
   bootstrap: [AppComponent]

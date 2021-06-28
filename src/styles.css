@@ -51,13 +51,26 @@ li {
   color: white !important;
   text-decoration: none;
   background-color: var(--body-color) !important;
-  font: 700 2.0rem "Poppins", sans-serif;
+  font: 700 2rem "Poppins", sans-serif;
 
-
-  border-radius: 6rem !important;
+  border-radius: 1rem !important;
 }
-header img{
-  height: 188px; width: 100%; display: block; object-fit: none;
+.odometer.odometer-theme-plaza {
+  width: 100% !important;
+  font: 700 2rem "Poppins", sans-serif !important;
+
+  border-radius: 1rem !important;
+}
+header img {
+  /* height: 188px;
+  width: 100%;
+  display: block;
+  object-fit: none; */
+
+  height: 16.7rem;
+  width: auto;
+  display: inline;
+  object-fit: cover;
 }
 #home h1 {
   font-size: 5rem;
@@ -66,7 +79,7 @@ header img{
 #home {
   margin-top: 2rem;
 }
-#lista h1{
+#lista h1 {
   font: 700 2.5rem "Poppins", sans-serif;
 }
 
@@ -89,3 +102,23 @@ header img{
 #lista button:hover {
   background-color: hsl(249deg 53% 55%) !important;
 }
+
+.list-group {
+  padding: 0.5rem !important;
+}
+.list-group-item {
+  background-color: #f0f8ff !important;
+  border-radius: 1rem !important;
+  color: #648baf !important;
+}
+canvas {
+  height: 100% !important; /* we need these for full-screen effect */
+  width: 100% !important;
+  z-index: 3 !important;
+  position: fixed;
+}
+/* 
+.container {
+  display: flex;
+  justify-content: center;
+} */

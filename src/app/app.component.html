@@ -22,8 +22,7 @@
     </nav> -->
     <div class="justify-content-center text-center">
       <!-- <h1 class="text-center" style="margin-top: 26px; color: #bd511f">CardsBrubs</h1><br><br> -->
-      <img data-src="" alt="" 
-        src="../assets/sindimoto.jpg" data-holder-rendered="true">
+      <img data-src="" alt="" src="../assets/sindimoto.jpg" data-holder-rendered="true">
 
       <!-- <button class="btn btn-dark justify-content-center" (click)="listarTodosCards()">Listar todos cards</button> -->
     </div>
@@ -54,7 +53,11 @@
       <div class="container ">
         <h1>Lista de sorteados:</h1>
         <ul class="list-group" *ngFor="let item of numerosSorteados">
-          <li class="list-group-item">{{item.numero}}</li>
+
+          <tm-ng-odometer [number]="'11973575621'" [theme]="'plaza'" [config]="{format: '(dddd)' }">
+          </tm-ng-odometer>
+          <!-- <ng2-odometer [number]="item.numero" [config]="{ }"></ng2-odometer> -->
+          <!-- <li class="list-group-item"></li> -->
         </ul>
 
       </div>
