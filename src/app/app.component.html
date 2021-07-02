@@ -54,7 +54,7 @@
         <h1>Lista de sorteados:</h1>
         <ul class="list-group" *ngFor="let item of numerosSorteados">
 
-          <tm-ng-odometer [number]="'11973575621'" [theme]="'plaza'" [config]="{format: '(dddd)' }">
+          <tm-ng-odometer [number]="item.numero" [theme]="'plaza'" [config]="{format: 'd' }">
           </tm-ng-odometer>
           <!-- <ng2-odometer [number]="item.numero" [config]="{ }"></ng2-odometer> -->
           <!-- <li class="list-group-item"></li> -->
