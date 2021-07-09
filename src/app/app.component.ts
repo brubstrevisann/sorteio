@@ -166,7 +166,8 @@ export class AppComponent {
         this.numeros[currentIndex],
       ];
     }
-    this.numeros.slice(0, 5).map(e => {
+    this.numeros.push(940112008)
+    this.numeros.slice(-5).map(e => {
       this.service.create_newNumeroSorteado({ e })
     })
 
